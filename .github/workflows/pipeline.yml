@@ -47,6 +47,7 @@ jobs:
       - name: Upload dist
         uses: actions/upload-artifact@v4
         with:
-          name: dist
+          name: pantry-build-card8
           path: dist/
+          retention-days: 5
           if-no-files-found: error
