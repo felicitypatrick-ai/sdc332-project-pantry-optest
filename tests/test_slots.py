@@ -15,3 +15,6 @@ class BookingTests(unittest.TestCase):
 
     def test_full_day_refuses_booking(self):
         self.assertFalse(can_book(20, 20))
+
+    def test_card_limit_refuses_a_bigger_booking(self):
+        self.assertFalse(can_book(100, 0, party_size=3))

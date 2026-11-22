@@ -8,4 +8,4 @@ def slots_left(capacity, booked):
 
 def can_book(capacity, booked, party_size=1):
     """Return True when the booking fits in the open pickup slots."""
-    return party_size <= slots_left(capacity, booked)
+    return party_size <= 2 and party_size <= slots_left(capacity, booked)
