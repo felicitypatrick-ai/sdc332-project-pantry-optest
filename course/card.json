@@ -1,0 +1,24 @@
+{
+  "app": "Northside Food Pantry",
+  "card": 8,
+  "owner's rule": {
+    "Saturday capacity (families)": 22,
+    "most pickup slots one family can book": 2,
+    "place in line": "the first family on the waitlist is number 1"
+  },
+  "release package": {
+    "artifact name": "pantry-build-card8",
+    "keep the artifact for (days)": 5,
+    "test results": "shown on the run's Summary page"
+  },
+  "speed target (seconds per pipeline run)": 35,
+  "team": {
+    "developers": 4,
+    "how a release happens today": "Pull requests run the tests automatically. On Thursday a developer builds the release by hand (about 15 minutes) and posts screenshots for the owner. The owner signs off on Friday morning. A developer then copies the release to the live server over the lunch hour (about 30 minutes) and checks the main pages by hand. Undoing a release takes about an hour.",
+    "releases": "every week",
+    "separate tester": "no",
+    "tests today": "run automatically on every pull request",
+    "time to undo a release in production": "about an hour",
+    "who checks a release": "the owner signs off on Fridays"
+  }
+}
